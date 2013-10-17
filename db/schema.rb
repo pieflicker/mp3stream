@@ -11,10 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131017205901) do
-
-  create_table "song_uploader", force: true do |t|
-  end
+ActiveRecord::Schema.define(version: 20131017210107) do
 
   create_table "songs", force: true do |t|
     t.string   "artist"
