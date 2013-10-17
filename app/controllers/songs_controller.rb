@@ -8,7 +8,7 @@ class SongsController < ApplicationController
 
   	@songs = current_user.songs
 
-  	@song = Song.new
+  	
   end
 
   def new
@@ -34,6 +34,12 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
     @song.destroy
     redirect_to songs_path, notice:  "#{@song.name} has been deleted."
+  end
+
+  def search
+    query = "%#{params[:search]}%"
+    @songs = current_user.songs.where("artist LIKE ? OR track LIKE ?", query, query)
+    render "index"
   end
 
 

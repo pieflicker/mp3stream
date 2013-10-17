@@ -3,7 +3,11 @@ Mp3stream::Application.routes.draw do
 
 resources :users, :only => [:new, :create]
 
-resources :songs, :only => [:index, :new, :create, :destroy]
+resources :songs, :only => [:index, :new, :create, :destroy] do
+  collection do
+    post :search
+  end
+end
 resources :sessions, :only => [:new, :create, :destroy]
 root 'welcome#index'
 get 'songs/:id' => 'songs#index', :as => 'play'
