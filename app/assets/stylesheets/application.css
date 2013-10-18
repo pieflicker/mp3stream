@@ -139,6 +139,10 @@ body {
   background-color: grey;
 }
 
+.nav_buttons:hover { 
+  background-color: #D3D6FF;
+}
+
 #home {
   width: 50px;
 }
@@ -150,10 +154,14 @@ body {
 }
 
 .signup {
-  width: 500px;
+  width: 60%;
+  height: 500px;
   margin-right: auto;
   margin-left: auto;
-
+  background-color: #3F547F;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
 }
 
 #footer {
@@ -168,6 +176,3 @@ body {
   border-radius: 10px;
   }
 
-a:hover { 
-  background-color:yellow;
-}
