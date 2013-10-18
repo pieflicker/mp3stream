@@ -8,7 +8,7 @@ class SongsController < ApplicationController
 
   	@songs = current_user.songs
 
-  	
+  	@song = Song.new
   end
 
   def new
