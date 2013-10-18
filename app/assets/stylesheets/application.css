@@ -14,10 +14,18 @@
 body {
   background-color: lightgrey;
 
+}
 
+#header {
+  width: 65%;
+  height: 150px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cell {
+  background-color: grey;
 	border: 1px solid black;
 	width: 250px;
 
@@ -25,27 +33,38 @@ body {
 }
 
 .short_cell {
+  background-color: grey;
 	border: 1px solid black;
 	width: 75px;
 
 }
 
-#player {
-  width: 700px;
+#player_div {
+  background-color: #3F547F;
+  width: 65%;
+  height: 55px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 8px 8px 0px 0px;
   margin-left: auto;
   margin-right: auto;
 
 }
 
 #song_index {
-  background-color: #33CCCC;
-  border: 1px solid black;
+  background-color: #3F547F;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0px 0px 8px 8px;
   width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .medium_cell {
+  background-color: grey;
   border: 1px solid black;
   width: 175px;
 }
@@ -57,4 +76,24 @@ body {
 #song_table {
   margin-left: auto;
   margin-right: auto;
+}
+
+#search_box {
+  float: right;
+  margin-right: 50px;
+  padding-top: 20px;
+}
+
+.userinfo {
+  float: right;
+}
+
+#show_player {
+  float: left;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+
+#headertext {
+  text-align: center;
 }
