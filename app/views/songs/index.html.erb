@@ -1,10 +1,5 @@
 
-<div id="header">
-<p id="headertext"> this is a banner image. no really I swear it is! </p>
-</div>
 
-
-<a href="/"> <p> HOME </p> </a>
 
 
 
@@ -15,8 +10,7 @@
   </div>
 <% end %>
 
-<%= link_to "Add Song", new_song_path, class: "btn btn-primary" %>
-<br>
+
 <br>
 <br>
 <br>
@@ -28,9 +22,16 @@
     <% end %>
   </span>
 
+  <span id="now_playing"> 
+    <% if @playersong %>
+      <span id="NP"> Now Playing:  </span> <span id="NP_info">"<%= @playersong.artist %> - <%= @playersong.track %>" </span>
+    <%end%>
+  </span>
+
+
 <span id="search_box">
   <%= form_tag search_songs_path do %>
-    <%= text_field_tag 'search', nil, placeholder: 'Artist search...' %>
+    <%= text_field_tag 'search', nil, placeholder: 'Search music...' %>
     <%= submit_tag "Search"  %>
   <%end%>
 </span>
@@ -65,4 +66,6 @@
 </table>
 
 </div>
+
+
 

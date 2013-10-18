@@ -10,20 +10,33 @@
 
 </head>
 <body>
-  
-<p class="userinfo">
-      <% if current_user %>
-        Signed in as <%= current_user.user_name %>. <%= link_to "Log out", session_path(current_user.id), :method => :delete %>
-      <% else %>
-        <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
-      <% end %>
-</p>
+  <div id="header">
+    <p id="headertext"> this is a banner image. no really I swear it is! </p>
+  </div>
 
+  <div id="navbar">
+    <ul> <a href="/">
+      <ul class="nav_buttons"> Home </ul></a>
+      <a href="/songs"><ul class="nav_buttons"> My Music </ul> </a>
+      <a href="/songs/new"> <ul class="nav_buttons"> Add Song </ul> </a>
+      <a href="https://lh3.googleusercontent.com/-6QfV-g9hZTs/Ti3DHfGUJ0I/AAAAAAAAAcE/_KnBMIxHd8s/w382-h383-no/jenson_button_OmTs0.jpg"> <ul class="nav_buttons"> Jenson </ul>
+      </a>
+      <ul class="userinfo">
+        <% if current_user %>
+          Signed in as <%= current_user.user_name %>. <%= link_to "Log out", session_path(current_user.id), :method => :delete %>
+        <% else %>
+          <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
+        <% end %>
+    </ul>
+    </ul>
+  </div>
 
 <%= yield %>
   
 
- 
+ <div id="footer">
+  <p> an image! with lots of little copyright info and design blurbs </p>
+ </div>
 
 </body>
 </html>

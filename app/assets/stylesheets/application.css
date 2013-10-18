@@ -11,6 +11,8 @@
  *= require_self
  *= require_tree .
  */
+ a {color:black;}
+
 body {
   background-color: lightgrey;
 
@@ -22,6 +24,8 @@ body {
   border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
+  background-color: #3F547F;
+  border-radius: 10px;
 }
 
 .cell {
@@ -71,6 +75,7 @@ body {
 
 .play_link {
   text-align: right;
+
 }
 
 #song_table {
@@ -85,7 +90,10 @@ body {
 }
 
 .userinfo {
-  float: right;
+  height: 22px;
+  margin-right: 20px;
+  background-color: grey;
+  border: 1px solid black;
 }
 
 #show_player {
@@ -96,4 +104,70 @@ body {
 
 #headertext {
   text-align: center;
+}
+
+#now_playing {
+  max-width: 500px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+
+#NP {
+  color: yellow;
+}
+
+#NP_info {
+  color: white;
+
+}
+#navbar {
+  width: 65%;
+  height: 40px;
+  border: 1px 1px 1px 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_buttons {
+  width: 100px;
+  height: 22px;
+  border: 1px solid black;
+  float:left;
+  text-align: middle;
+  background-color: grey;
+}
+
+#home {
+  width: 50px;
+}
+
+.well {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+#footer {
+  width: 60%;
+  height: 100px;
+  border: 1px solid black;
+  position: fixed; 
+  bottom: 5px;
+  margin-left: 356px;
+  text-align: center;
+  background-color: #3F547F;
+  border-radius: 10px;
+  }
+
+a:hover { 
+  background-color:yellow;
 }
