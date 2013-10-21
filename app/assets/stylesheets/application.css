@@ -24,7 +24,7 @@ body {
   border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
-  background-color: #3F547F;
+  background-color: #516CA3;
   border-radius: 10px;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 #player_div {
-  background-color: #3F547F;
+  background-color: #516CA3;
   width: 65%;
   height: 55px;
   border-right: 1px solid black;
@@ -57,7 +57,7 @@ body {
 }
 
 #song_index {
-  background-color: #3F547F;
+  background-color: #516CA3;
   border-right: 1px solid black;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
@@ -75,6 +75,10 @@ body {
 
 .play_link {
   text-align: right;
+}
+
+.play_link:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #FC6EF1;
 
 }
 
@@ -158,7 +162,7 @@ body {
   height: 500px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #3F547F;
+  background-color: #516CA3;
   border: 1px solid black;
   border-radius: 8px;
   text-align: center;
@@ -172,7 +176,7 @@ body {
   bottom: 5px;
   margin-left: 366px;
   text-align: center;
-  background-color: #3F547F;
+  background-color: #516CA3;
   border-radius: 10px;
   }
 
