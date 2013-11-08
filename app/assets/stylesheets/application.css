@@ -168,16 +168,20 @@ body {
   text-align: center;
 }
 
+#clear {
+  clear: both;
+}
+
 #footer {
   width: 60%;
   height: 100px;
   border: 1px solid black;
-  position: fixed; 
+  margin-top: 10px; 
   bottom: 5px;
   margin-left: 366px;
   text-align: center;
   background-color: #516CA3;
   border-radius: 10px;
-  clear: all;
+  clear: left;
   }
 
